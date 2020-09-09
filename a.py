@@ -1,4 +1,4 @@
-def comb(list, r): #list 요소에서 x개를 뽑는 조합 구하기 nCr
+def comb(list, r): #list 요소에서 r개를 뽑는 조합 구하기 nCr
     result = []
     if r > len(list):
         return result
@@ -19,6 +19,7 @@ def comb_sum(arr):
     for i in range(1, len(arr)+1):
         blank += comb(arr, i) #반복문을 활용하여 nC1 + nC2 + --- +nCn 경우를 확인
     print(blank)
+    
 """
 코드 구현되는지 확인
 if __name__ == "__main__":
